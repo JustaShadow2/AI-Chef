@@ -1,0 +1,81 @@
+Food,Time to spoilage (days),Storage Method
+Fish,0.5,Raw
+Fish,7,Smoking
+Fish,21,Salting
+Fish,365,Canning
+Fish,270,Freezing
+Fish,365,Freeze Drying
+Fish,2,Refrigeration
+Fish,20,Vacuum Packing
+Fish,28,Irradiation
+Beef,1,Raw
+Beef,365,Salting
+Beef,1825,Canning
+Beef,168,Freezing
+Beef,5475,Freeze Drying
+Beef,10,Refrigeration
+Beef,182,Vacuum Packing
+Beef,42,Irradiation
+Spinach,2,Raw
+Spinach,1825,Canning
+Spinach,187,Freezing
+Strawberries,4,Raw
+Strawberries,720,Canning
+Strawberries,720,Freezing
+Strawberries,240,Freeze Drying
+Strawberries,13,Refrigeration
+Apples,21,Raw
+Apples,7300,Drying
+Apples,540,Canning
+Apples,720,Freeze Drying
+Apples,56,Refrigeration
+Carrots,180,Drying
+Carrots,1825,Canning
+Carrots,270,Freezing
+Carrots,720,Freeze Drying
+Carrots,14,Refrigeration
+Potatoes,1825,Canning
+Potatoes,240,Freezing
+Potatoes,720,Freeze Drying
+Potatoes,35,Raw
+Potatoes,120,Refrigeration
+Potatoes,10950,Drying
+Corn,7300,Drying
+Corn,1825,Canning
+Corn,365,Freezing
+Corn,720,Freeze Drying
+Milk,21,Pasteurization
+Milk,20,Refrigeration
+Milk,90,Freezing
+Milk,7300,Drying (milk)
+Cheese,120,Fermentation (Cheese)
+Poultry,1,Raw
+Poultry,1825,Canning
+Poultry,720,Freezing
+Poultry,12,Refrigeration
+Poultry,19,Vacuum Packing
+Poultry,42,Irradiation
+Pork,1,Raw
+Pork,1825,Canning
+Pork,180,Freezing
+Pork,5,Refrigeration
+Pork,21,Vacuum Packing
+Pork,20,Irradiation w/ Refrigeration
+Lettuce,2,Raw
+Lettuce,7,Refrigeration
+Peaches,10,Raw
+Peaches,5,Refrigeration
+Peaches,720,Freezing
+Citrus,7,Raw
+Citrus,14,Refrigeration
+Mangos,5,Raw
+Mangos,10,Irradiation
+Grapefruit,7,Raw
+Grapefruit,540,Canning
+Wheat,10950,Drying
+Wheat,2,Raw
+Onion,7,Raw
+Onion,60,Refrigeration
+Rice,10950,Drying
+Egg,90,Raw
+Egg,240,Refrigeration
