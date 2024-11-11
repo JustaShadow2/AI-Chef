@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
 # asm day 5 with freshness 0
-days = np.array([0, 1, 2, 5])
-freshness_values = np.array([1.0, 0.694, 0.697, 0])
+days = np.array([0, 1, 2, 3, 4, 5])
+freshness_values = np.array([1.0, 0.694, 0.697, 0.543, 0.456, 0.0])
 
 # Define the sigmoid decay model function
 def freshness_sigmoid_model(t, L, k, t_0):
@@ -29,7 +29,7 @@ predicted_freshness = freshness_sigmoid_model(days_extended, L, k, t_0)
 
 # Plot the observed data and the fitted sigmoid curve
 plt.scatter(days, freshness_values, color='blue', label='Observed Data Points (Including Day 5)')
-plt.plot(days_extended, predicted_freshness, color='red', linestyle='--', label='Nonlinear Sigmoid Decay Curve')
+plt.plot(days_extended, predicted_freshness, color='red', label='Nonlinear Sigmoid Decay Curve')
 plt.xlabel('Days')
 plt.ylabel('Freshness Index')
 plt.title('Nonlinear Freshness Index Decay with Expected Spoilage at Day 5')
