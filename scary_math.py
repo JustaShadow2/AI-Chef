@@ -3,7 +3,9 @@ import math
 def freshness_index(time, mass_initial, mass_curr, temp_curr, temp_optimal, color_curr, color_optimal, weight_mass = 0.5, weight_temp = 0.3, weight_color = 0.2, alpha = 0.01, sigma = 5, lambda_ = 0.05):
 
     # Mass Factor - not certain about this
-    mass_factor = max(0, mass_curr / mass_initial) * weight_mass
+    decay_const = 0.28 #not 0.28 but define this later for each food group
+    mass_factor = max(0, (mass_curr / mass_initial) * math.exp(-decay_const * time)) * weight_mass
+   
     print(mass_factor)
 
     # Temperature Factor
