@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-days = np.array([0, 1, 2])
-freshness_values = np.array([1.0, 0.694, 0.697])
+days = np.array([0, 1, 2, 3, 4])
+freshness_values = np.array([1.0, 0.694, 0.697, 0.512, 0.328])
 
 # Define the exponential decay model function
 def freshness_decay_model(t, a, b, c):
