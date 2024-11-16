@@ -1,10 +1,9 @@
 import math
 
-def freshness_index(time, mass_initial, mass_curr, temp_curr, temp_optimal, color_curr, color_optimal, weight_mass = 0.5, weight_temp = 0.3, weight_color = 0.2, alpha = 0.01, sigma = 5, lambda_ = 0.05):
+def freshness_index(time, mass_initial, mass_curr, temp_curr, temp_optimal, color_curr, color_optimal, weight_mass = 0.5, weight_temp = 0.3, weight_color = 0.2, alpha = 0.3, sigma = 5, lambda_ = 0.05):
 
     # Mass Factor - not certain about this
-    decay_const = 0.28 #not 0.28 but define this later for each food group
-    mass_factor = max(0, (mass_curr / mass_initial) * math.exp(-decay_const * time)) * weight_mass
+    mass_factor = (math.exp(-alpha * time * (mass_curr / mass_initial))) * weight_mass
    
     print(mass_factor)
 
@@ -22,6 +21,15 @@ def freshness_index(time, mass_initial, mass_curr, temp_curr, temp_optimal, colo
     return min(1, freshness_index) # with the weights summing to 1, the maximum value of the freshness index is 1
 
 # Test the function
-test1 = freshness_index(time = 1, mass_initial = 126, mass_curr = 125, temp_curr = 11, temp_optimal = 12, color_curr = (258, 105, 105), color_optimal = (253, 110, 80))
+test1 = freshness_index(time = 6, mass_initial = 126, mass_curr = 110, temp_curr = 14, temp_optimal = 12, color_curr = (145, 62, 41), color_optimal = (253, 110, 80))
 
 print(test1)
+
+# 1.0
+# 0.710923868536591
+# 0.63709970475181
+# 0.511606076772564
+# 0.44434784966860497
+# 0.40576335646495826
+# 0.381205757697219
+
