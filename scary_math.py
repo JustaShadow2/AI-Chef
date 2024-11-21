@@ -24,12 +24,3 @@ def freshness_index(time, mass_initial, mass_curr, temp_curr, temp_optimal, colo
 test1 = freshness_index(time = 6, mass_initial = 126, mass_curr = 110, temp_curr = 14, temp_optimal = 12, color_curr = (145, 62, 41), color_optimal = (253, 110, 80))
 
 print(test1)
-
-# 1.0
-# 0.710923868536591
-# 0.63709970475181
-# 0.511606076772564
-# 0.44434784966860497
-# 0.40576335646495826
-# 0.381205757697219
-
