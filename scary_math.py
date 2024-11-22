@@ -20,7 +20,6 @@ def freshness_index(time, mass_initial, mass_curr, temp_curr, temp_optimal, colo
     freshness_index = mass_factor + temp_factor + color_factor
     return min(1, freshness_index) # with the weights summing to 1, the maximum value of the freshness index is 1
 
-# Test the function
-test1 = freshness_index(time = 6, mass_initial = 126, mass_curr = 110, temp_curr = 14, temp_optimal = 12, color_curr = (145, 62, 41), color_optimal = (253, 110, 80))
-
-print(test1)
+# # Test the function
+# test1 = freshness_index(time = 6, mass_initial = 126, mass_curr = 110, temp_curr = 14, temp_optimal = 12, color_curr = (145, 62, 41), color_optimal = (253, 110, 80))
+# print(test1)

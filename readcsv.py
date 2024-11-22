@@ -1,6 +1,7 @@
-#written by lukas (i am the goat)
+# written by lukas (i am the poorly endowed)
 
-import csv, ast
+import csv
+import ast
 
 class Food:
     def __init__(self, food_name, food_group, colour_day, mass_day, temp_day):
@@ -23,7 +24,7 @@ foodList = []
 
 with open('ourData.csv', "r") as commentedFile: 
     reader = csv.reader(commentedFile)
-    next(reader) #skip line of headers
+    next(reader)  # skip line of headers
 
     for row in reader:
         food_name = row[0].strip()
@@ -36,9 +37,10 @@ with open('ourData.csv', "r") as commentedFile:
         mass_day_list = ast.literal_eval(mass_day_raw)
         temp_day_list = ast.literal_eval(temp_day_raw)
 
-        colour_day = {tuple(item[0]): item[1] for item in colour_day_list}
-        mass_day = {item[0]: item[1] for item in mass_day_list}
-        temp_day = {item[0]: item[1] for item in temp_day_list}
+        # Use lists instead of dictionaries because duplicate values erases entries that we need
+        colour_day = colour_day_list
+        mass_day = mass_day_list
+        temp_day = temp_day_list
 
         food = Food(food_name, food_group, colour_day, mass_day, temp_day)
 
