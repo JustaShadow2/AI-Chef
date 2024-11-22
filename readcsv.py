@@ -1,4 +1,4 @@
-# written by lukas (i am the poorly endowed)
+# written by lukas (i am the greatest coder of all time)
 
 import csv
 import ast
